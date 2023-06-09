@@ -5,7 +5,6 @@ import torch
 from utils import utils_logger
 from utils import utils_image as util
 from models.network_rrdbnet import RRDBNet as net
-from torchsummary import summary
 from myutils import converter, resizer, cropper
 
 
@@ -36,7 +35,11 @@ def deeplearn():
 
     save_results = True
     sf = 4
+
     device = torch.device("cpu")
+    if(torch.cuda.is_available()):
+        device = torch.device("cuda:0")
+
     print("device:",device)
     for model_name in model_names:
         # set scale factor
