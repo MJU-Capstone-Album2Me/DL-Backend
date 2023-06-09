@@ -1,0 +1,47 @@
+23-06-03 14:45:21.777 :       Model Name : BSRGANx2
+23-06-03 14:48:37.053 :       Model Name : BSRGANx2
+23-06-03 14:49:24.445 :       Model Name : BSRGANx2
+23-06-04 23:19:47.635 :       Model Name : BSRGANx2
+23-06-04 23:20:26.142 :       Model Name : BSRGANx2
+23-06-04 23:21:00.060 :       Model Name : BSRGANx2
+23-06-04 23:23:45.404 :       Model Name : BSRGANx2
+23-06-04 23:29:37.790 :       Model Name : BSRGANx2
+23-06-04 23:29:38.267 :       Input Path : ../datasets/sample_images_convert_resize
+23-06-04 23:29:38.267 :      Output Path : ../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-05 08:28:57.004 :       Model Name : BSRGANx2
+23-06-05 08:28:57.517 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-05 08:28:57.517 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-05 08:28:57.517 : ---1 --> BSRGANx2 --> x2--> resize_1512w.png
+23-06-05 08:47:50.757 : ---2 --> BSRGANx2 --> x2--> resize_21101.png
+23-06-06 06:47:56.489 :       Model Name : BSRGANx2
+23-06-06 06:47:56.962 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-06 06:47:56.962 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-06 06:47:56.962 : ---1 --> BSRGANx2 --> x2--> resize_21101.png
+23-06-06 13:58:48.412 :       Model Name : BSRGANx2
+23-06-06 13:58:48.965 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-06 13:58:48.965 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-06 13:58:48.965 : ---1 --> BSRGANx2 --> x2--> resize_21101.png
+23-06-06 14:41:24.174 :       Model Name : BSRGANx2
+23-06-06 14:41:24.665 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-06 14:41:24.665 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-06 14:41:24.665 : ---1 --> BSRGANx2 --> x2--> resize_21101.png
+23-06-06 17:14:51.496 :       Model Name : BSRGANx2
+23-06-06 17:14:51.995 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-06 17:14:51.995 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-06 17:14:51.995 : ---1 --> BSRGANx2 --> x2--> resize_21101.png
+23-06-07 15:18:48.527 :       Model Name : BSRGANx2
+23-06-07 15:18:49.068 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-07 15:18:49.068 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-07 15:18:49.068 : ---1 --> BSRGANx2 --> x2--> resize_21101.png
+23-06-08 18:16:14.665 :       Model Name : BSRGANx2
+23-06-08 18:16:15.169 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-08 18:16:15.169 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-08 18:16:15.169 : ---1 --> BSRGANx2 --> x2--> resize_ab.png
+23-06-10 02:59:50.410 :       Model Name : BSRGANx2
+23-06-10 02:59:50.915 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-10 02:59:50.915 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-10 02:59:50.915 : ---1 --> BSRGANx2 --> x2--> resize_aaaaa.png
+23-06-10 03:10:43.078 :       Model Name : BSRGANx2
+23-06-10 03:10:43.559 :       Input Path : ../datasets/../datasets/sample_images_convert_resize
+23-06-10 03:10:43.559 :      Output Path : ../datasets/../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth
+23-06-10 03:10:43.559 : ---1 --> BSRGANx2 --> x2--> resize_aaaaa.png

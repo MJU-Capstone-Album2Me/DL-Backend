@@ -1,42 +1,38 @@
-import io
-from typing import Optional
+import os
 from fastapi import FastAPI
-from pydantic import BaseModel
+from typing import List
 from fastapi import FastAPI, File, UploadFile
-from fastapi.responses import StreamingResponse
-import base64
+
+import s3utils
+import inference
 
 
 app = FastAPI()
 
-class Base64Request(BaseModel):
-    base64File: str
-
-class Base64Resposne(BaseModel):
-    responseCode: int
-    responseImage: str
-
-@app.get("/")
+@app.get("/health-check")
 def root():
     return {"Hello": "World"}
 
+
 @app.post("/image-detection")
-async def image_dectection(request: Base64Request):
+async def image_detection2(images: List[UploadFile] = File(...)):
 
-    image_data = base64.b64decode(request.base64File)
+    os.makedirs("../datasets/sample_images", exist_ok=True)
 
-    response = Base64Resposne(
-        responseCode = 200,
-        responseImage = base64.b64encode(image_data).decode("utf-8")
-        
-    ).dict()
-    return response
+    file_formats = []
+    for image in images:
+        file_formats.append(image.content_type.split('/')[-1])
+        file_path = "../datasets/sample_images/" + image.filename
+        with open(file_path, "wb") as f:
+            f.write(await image.read())
 
+    inference.deeplearn()
+    images_url = []
+    for filename in os.listdir("../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth"):
+        file_path = os.path.join("../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth", filename)
 
-@app.post("/image-detection2")
-async def image_detection2(image: UploadFile = File(...)):
-    image_data = await image.read()
-    file_format = image.content_type.split('/')[-1]
-    return StreamingResponse(io.BytesIO(image_data), media_type=f'image/{file_format}')
+        if os.path.isfile(file_path):
+            upload_url = s3utils.upload_file(file_path, filename)
+            images_url.append(upload_url)
 
-
+    return {"imagesUrl": images_url}
