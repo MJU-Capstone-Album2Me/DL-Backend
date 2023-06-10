@@ -36,7 +36,7 @@ async def image_detection2(images: List[UploadFile] = File(...)):
         with open(file_path, "wb") as f:
             f.write(await image.read())
 
-    #inference.deeplearn()
+    inference.deeplearn()
     images_url = []
     for filename in os.listdir("../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth"):
         file_path = os.path.join("../datasets/sample_images_convert_resize_results_x2_BSRGANx2.pth", filename)
